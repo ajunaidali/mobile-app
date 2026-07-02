@@ -1,4 +1,4 @@
-import { Text, TextInput, View } from "react-native";
+import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function RootLayout() {
@@ -16,8 +16,18 @@ export default function RootLayout() {
             padding: 10, 
             marginTop: 12,
            }}
-
         />
+        <TouchableOpacity
+          onPress={() => alert("Searching!")}
+          style={{
+          backgroundColor: "#2563EB",
+          padding: 12,
+          borderRadius: 8,
+          marginTop: 10,
+          alignItems: "center",
+        }}>
+          <Text style={{ color: "white", fontWeight: "bold" }}>Search</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
