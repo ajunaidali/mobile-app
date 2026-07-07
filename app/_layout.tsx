@@ -1,6 +1,6 @@
 import { FlatList, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
+import "../global.css"
 const properties = [
   { id: '1', title: 'Modern Villa', city: 'Mumbai', price: '₹1.2Cr' },
   { id: '2', title: 'Sea View Flat', city: 'Mumbai', price: '₹85L' },
